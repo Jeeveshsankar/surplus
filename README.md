@@ -1,6 +1,6 @@
 # Surplus: From Waste to Wonder
 
-Surplus is an AI-driven, real-time food redistribution platform engineered to eliminate food waste and fight hunger. By bridging the gap between food donors, distribution centers, and logistics providers, Surplus ensures that perfectly good food is redirected to those in need before it spoils.
+Surplus is a triple-bottom-line platform utilizing AI-driven autonomous dispatching to solve the $1 Trillion food spoilage problem. By bridging the gap between food donors, distribution centers, and logistics providers, Surplus ensures that perfectly good food is redirected to those in need before the clock runs out.
 
 ## The Mission
 
