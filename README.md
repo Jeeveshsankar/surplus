@@ -1,74 +1,59 @@
-# Surplus
+# Surplus: From Waste to Wonder
 
-Surplus is a modern web application built with Next.js that leverages geospatial mapping and real-time database capabilities. The application features interactive maps, dynamic routing, and data visualization.
+Surplus is an AI-driven, real-time food redistribution platform engineered to eliminate food waste and fight hunger. By bridging the gap between food donors, distribution centers, and logistics providers, Surplus ensures that perfectly good food is redirected to those in need before it spoils.
 
-## Technologies
+## The Mission
 
-This project is built using a robust stack of modern web technologies:
+Globally, 1.3 billion tons of food are wasted annually while 800 million people face hunger. Traditional redistribution systems fail due to information asymmetry and logistical friction, particularly with cooked meals that have a tight "3-hour window." 
 
-- Framework: Next.js with React 19
-- Styling: Tailwind CSS
-- State Management: Zustand and React Query
-- Database & Authentication: Supabase
-- Mapping & Geospatial Analysis: Mapbox GL and Turf.js
-- Animations: Framer Motion
-- UI Components: Radix UI primitives (via CMDK, Sonner)
+Surplus solves the "Spoilage Gap" by applying intelligence at the edge—matching supply to demand instantaneously.
 
-## Prerequisites
+## Core Ecosystem
 
-Before you begin, ensure you have the following installed:
-- Node.js (version 20 or higher recommended)
-- npm, yarn, pnpm, or bun
+The platform is divided into three seamlessly integrated experiences designed for frontline operators:
 
-## Installation
+- **Donor Dashboard:** Designed for food providers (restaurants, grocers). Features one-click "Kitchen Drops" and automates compliance and tax receipt generation.
+- **Receiver Application:** Built for shelters and food banks. Provides smart inventory feeds and "Urgency Boosts" to quickly secure fast-expiring, nutrient-dense items.
+- **Logistics Module:** Empowers drivers with autonomous dispatching and real-time, turn-by-turn navigation optimized for perishable transit.
 
-Clone the repository and install the dependencies:
+## Technical Architecture
 
+Surplus utilizes a modern, high-performance tech stack:
+
+- **Framework:** Next.js with React 19
+- **Database & Auth:** Supabase for real-time data synchronization
+- **Geospatial Engine:** Mapbox GL & Turf.js for Expiry-Aware Routing (prioritizing matches based on time-to-spoilage and distance)
+- **State Management:** Zustand & React Query
+- **UI/UX:** Tailwind CSS, Framer Motion, and Radix UI primitives for a highly responsive interface
+
+## Installation & Setup
+
+1. Clone the repository and install dependencies:
 ```bash
 npm install
 ```
 
-## Configuration
+2. Configure your environment variables in a `.env.local` file (requires Supabase and Mapbox API keys).
 
-Set up your environment variables by creating a `.env.local` file in the root directory. You will need to provide keys for Supabase and Mapbox. Refer to the existing configuration files or documentation for the specific keys required.
-
-## Development
-
-Start the local development server:
-
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-Open your browser and navigate to `http://localhost:3000` to view the application.
+4. Navigate to `http://localhost:3000` to access the application.
 
-## Building for Production
+## Development Commands
 
-To create an optimized production build, run:
+- `npm run build`: Create an optimized production build
+- `npm run start`: Start the production server
+- `npm run lint`: Execute ESLint for code quality checks
 
-```bash
-npm run build
-```
+## The Impact
 
-Then, you can start the production server:
-
-```bash
-npm run start
-```
-
-## Code Quality
-
-This project uses ESLint for code linting. To check the code quality, run:
-
-```bash
-npm run lint
-```
-
-## Architecture and Structure
-
-- `src/`: Contains the primary source code, including pages, components, hooks, and utility functions.
-- `public/`: Stores static assets such as images and icons.
-- `tests/`: Contains Playwright tests for end-to-end testing.
+Surplus operates on a triple bottom line:
+- **Environmental:** Prevents CO2 emissions by keeping organic waste out of landfills.
+- **Social:** Delivers nutrient-dense meals to vulnerable communities.
+- **Economic:** Provides tax savings for donors through automated compliance.
 
 ## License
 
